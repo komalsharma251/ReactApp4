@@ -1,0 +1,150 @@
+/* Apply box-sizing to all elements for easier layout control */
+* {
+  box-sizing: border-box;
+}
+
+/* Global body styling */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f6fb;
+  color: #1f2937;
+}
+
+/* Main application container */
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Header section styling */
+.app-header {
+  text-align: center;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 18px;
+  margin-bottom: 24px;
+}
+
+/* Main heading inside header */
+.app-header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+/* Header paragraph styling */
+.app-header p {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+/* Summary section for total votes and top item */
+.summary-box {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Summary heading styling */
+.summary-box h3 {
+  margin: 0 0 8px;
+  color: #1e3a8a;
+}
+
+/* Wrapper for reset button */
+.reset-wrapper {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Grid layout for vote cards */
+.vote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* Individual voting card styling */
+.vote-card {
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect for vote cards */
+.vote-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Vote card heading */
+.vote-card h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+/* Vote card description text */
+.vote-card p {
+  min-height: 48px;
+  color: #4b5563;
+}
+
+/* Vote count text styling */
+.vote-count {
+  margin: 18px 0;
+  font-size: 18px;
+}
+
+/* Base button styling */
+.btn {
+  border: none;
+  padding: 11px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+/* Primary button styling */
+.btn.primary {
+  background: #2563eb;
+  color: white;
+}
+
+/* Secondary button styling */
+.btn.secondary {
+  background: #111827;
+  color: white;
+}
+
+/* Button hover effect */
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Tablet responsive layout */
+@media (max-width: 900px) {
+  .vote-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+  
+  /* Display cards in single column */
+  .vote-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Reduce header font size on mobile */
+  .app-header h1 {
+    font-size: 26px;
+  }
+}
