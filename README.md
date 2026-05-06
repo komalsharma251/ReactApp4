@@ -169,6 +169,29 @@ This command generates an optimized production-ready build inside the `dist` fol
 - Responsive modern layout
 
 ---
+# 📸 Screenshots
+
+## Home Page
+
+![Home Page](public/screenshots/voteapp_dashboard.png)
+![Home Page](public/screenshots/votingitems.png)
+![Home Page](public/screenshots/totalvoting.png)
+![Home Page](public/screenshots/resetvote.png)
+
+
+---
+
+## Mobile Responsive View
+
+![Mobile View](public/screenshots/mobileviewwithVoting.png)
+![Mobile View](public/screenshots/mobileviewwithReset.png)
+
+---
+
+## Unit Test Results
+
+![Test Results](public/screenshots/testfailed2.png)
+![Test Results](public/screenshots/testpass.png)
 
 # 👨‍💻 Author
 
